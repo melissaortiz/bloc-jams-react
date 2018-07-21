@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
 
+var sectionStyle = {
+	width: "100%",
+	height: "400px",
+	backgroundImage: 'url(${Background})'
+}
+
 class Album extends Component {
 	constructor(props) {
 		super(props);
@@ -146,6 +152,7 @@ class Album extends Component {
 
 	render() {
 		return (
+			<div style={ { backgroundImage: 'url(require("images/blurred_backgrounds/blur_bg_3.jpg"))'}}>
 			<section className="album">
 			<section id="album-info">
 			<img id="album-cover-art" src={this.state.album.albumCover} alt={this.state.album.title}/>
@@ -155,12 +162,15 @@ class Album extends Component {
 			 <div id="release=info">{this.state.album.releaseInfo}</div>
 			</div>
 			</section>
-			<table id="song-list">
-			 <colgroup>
-			  <col id="song-number-column" />
-			  <col id="song-title-column" />
-			  <col id="song-duration-column" />
-			 </colgroup>
+			<table id="song-list" className="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+			 <thead>
+			  <tr>
+			   <th className="mdl-layout__drawer">
+			   <th id="song-number-column" class="mdl-data-table__cell--non-numeric"/>Number</th>
+			   <th id="song-title-column">Song</th>
+			   <th id="song-duration-column">Time</th>
+			  </tr>
+			 </thead>
 			 <tbody>
 			  {
 			  	this.state.album.songs.map((song, index) =>
@@ -170,7 +180,7 @@ class Album extends Component {
 			  	 onMouseLeave={() => this.mouseHoverNo(song)} >
 			  	  
 			  	  {this.onEnter(song, index)}
-			  	  <td className='songTitle'>{song.title}</td>
+			  	  <td className='songTitle' className="mdl-data-table mdl-js-data-table">{song.title}</td>
 			  	  <td className='songDuration'>{this.formatTime(song.duration)}</td>
 			  	 </tr>
 			  	)
