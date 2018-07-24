@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
 
-var sectionStyle = {
-	width: "100%",
-	height: "400px",
-	backgroundImage: 'url(${Background})'
-}
 
 class Album extends Component {
 	constructor(props) {
@@ -152,10 +147,9 @@ class Album extends Component {
 
 	render() {
 		return (
-			<div style={ { backgroundImage: 'url(require("images/blurred_backgrounds/blur_bg_3.jpg"))'}}>
 			<section className="album">
 			<section id="album-info">
-			<img id="album-cover-art" src={this.state.album.albumCover} alt={this.state.album.title}/>
+			<isSameSong id="album-cover-art" src={this.state.album.albumCover} alt="Album Cover" />
 			<div className="album-details">
 			 <h1 id="album-title">{this.state.album.title}</h1>
 			 <h2 className="artist">{this.state.album.artist}</h2>
