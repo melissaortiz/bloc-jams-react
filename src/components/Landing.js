@@ -1,8 +1,12 @@
 import React from 'react';
+import headerImage from '../lights-party-dancing-music.jpg';
 
 const Landing = () => (
 	<section className="landing">
-	<h1 className="hero-title">Turn the music up!</h1>
+	<h1 className="hero-title">
+	<div className="main-point">Turn the music up!</div>
+	<img src={headerImage} alt="concert" className="headerImage" />
+	</h1>
 
 	<section className="selling-points">
 	 <div className="point">

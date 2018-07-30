@@ -9,3 +9,38 @@ body {
   background-size: cover;
 
 }
+
+.logo {
+  float: left;
+}
+
+.point {
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+}
+
+.headerImage{
+	height:400px;
+	width: 90%;
+}
+
+.library {
+	margin-right: 10px;
+	float: left;
+	background-image: url(/src/smartphone-vintage-technology-music.jpg);
+}
+
+.main-point{
+  position: absolute;
+  top: 8%;
+  left: 55%;
+  font-family: "bradley hand", cursive;
+  color: #e6007a;
+}
+
+.navigation-links{
+  font-family: "bradley hand", cursive;
+  font-size:large;
+  letter-spacing: 2px;
+}
