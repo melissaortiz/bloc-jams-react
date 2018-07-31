@@ -156,7 +156,7 @@ class Album extends Component {
 			 <div id="release=info">{this.state.album.releaseInfo}</div>
 			</div>
 			</section>
-			<table id="song-list" className="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+			<table id="song-list" className="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" className="song-table">
 			 <thead>
 			  <tr>
 			   <th className="mdl-layout__drawer">
@@ -181,7 +181,7 @@ class Album extends Component {
 			  }
 			  </tbody>
 			 </table>
-			 <PlayerBar 
+			 <PlayerBar className="player-bar"
 			 isPlaying={this.state.isPlaying} 
 			 currentSong={this.state.currentSong}
 			 currentTime={this.audioElement.currentTime}
