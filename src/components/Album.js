@@ -149,18 +149,18 @@ class Album extends Component {
 		return (
 			<section className="album">
 			<section id="album-info">
-			<isSameSong id="album-cover-art" src={this.state.album.albumCover} alt="Album Cover" />
+			<img id="album-cover-art" src={this.state.album.albumCover} alt="Album Cover" />
 			<div className="album-details">
 			 <h1 id="album-title">{this.state.album.title}</h1>
 			 <h2 className="artist">{this.state.album.artist}</h2>
-			 <div id="release=info">{this.state.album.releaseInfo}</div>
+			 <div id="release-info">{this.state.album.releaseInfo}</div>
 			</div>
 			</section>
 			<table id="song-list" className="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" className="song-table">
 			 <thead>
 			  <tr>
-			   <th className="mdl-layout__drawer">
-			   <th id="song-number-column" class="mdl-data-table__cell--non-numeric"/>Number</th>
+			   
+			   <th id="song-number-column" class="mdl-data-table__cell--non-numeric">Number</th>
 			   <th id="song-title-column">Song</th>
 			   <th id="song-duration-column">Time</th>
 			  </tr>
@@ -174,7 +174,7 @@ class Album extends Component {
 			  	 onMouseLeave={() => this.mouseHoverNo(song)} >
 			  	  
 			  	  {this.onEnter(song, index)}
-			  	  <td className='songTitle' className="mdl-data-table mdl-js-data-table">{song.title}</td>
+			  	  <td className="songTitle mdl-data-table mdl-js-data-table">{song.title}</td>
 			  	  <td className='songDuration'>{this.formatTime(song.duration)}</td>
 			  	 </tr>
 			  	)

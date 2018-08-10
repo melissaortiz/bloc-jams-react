@@ -18,17 +18,15 @@ body {
   font-weight: bold;
   float: left;
   margin-right: 10px;
+  color: #00ffff;
+  font-family: "bradley hand", cursive;
+  font-size: 35px;
 }
 
 .headerImage{
 	height:400px;
-	width: 90%;
-}
-
-.library {
-	margin-right: 10px;
-	float: left;
-	background-image: url(/src/smartphone-vintage-technology-music.jpg);
+	width: 95%;
+  
 }
 
 .main-point{
@@ -48,20 +46,75 @@ body {
 .player-bar{
   width:400px;
   margin: 0 auto;
-
+  position: relative;
+  left:0px;
+  top: 260px;
+  font-family: "bradley hand", cursive;
+  color: #00FFFF;
 }
 
 .song-table{
-  width: 400px;
+  width: 420px;
   margin: 0 auto;
+  font-family: "bradley hand", cursive;
+  font-weight: bold;
+  font-size:30px;
+  color: #00FFFF;
+  position: absolute;
+  top: 39%;
+  left: 32%;
 }
 
 .songTitle{
-  background: none;
+ background-color: transparent;
+ border: none;
+ font-size: 25px;
 }
 
-input[type="text"]
-{
-    background: transparent;
-    border: none;
+#album-title{
+  color: #00ffff;
+  font-family: "bradley hand", cursive;
+
 }
+
+.artist{
+  color: #00ffff;
+  font-family: "bradley hand", cursive;
+}
+
+#release-info{
+  color: #00ffff;
+  font-family: "bradley hand", cursive;
+  font-size: 25px;
+}
+
+.songs{
+  color: #00ffff;
+  font-family: "bradley hand", cursive;
+}
+
+.cover{
+  float: left;
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  position: relative;
+  top: 65px;
+  
+}
+
+#album-cover-art{
+  height: 500px;
+  width: 95%;
+  opacity: .5;
+}
+
+.point-description{
+  font-size: 18px;
+  padding-left: 160px;
+}
+
+.point-title{
+  text-align: right;
+}
+
