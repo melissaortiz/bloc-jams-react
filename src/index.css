@@ -94,12 +94,7 @@ body {
 }
 
 .cover{
-  float: left;
-  height: 300px;
-  width: 500px;
-  margin: 10px;
-  position: relative;
-  top: 65px;
+  display: inline-block;
   
 }
 
@@ -121,4 +116,3 @@ body {
 .library{
   
 }
-
