@@ -63,6 +63,7 @@ body {
   position: absolute;
   top: 39%;
   left: 32%;
+  background-color: transparent;
 }
 
 .songTitle{

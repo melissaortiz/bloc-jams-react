@@ -156,11 +156,11 @@ class Album extends Component {
 			 <div id="release-info">{this.state.album.releaseInfo}</div>
 			</div>
 			</section>
-			<table id="song-list" className="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" className="song-table">
+			<table id="song-list" className="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp song-table">
 			 <thead>
 			  <tr>
 			   
-			   <th id="song-number-column" class="mdl-data-table__cell--non-numeric">Number</th>
+			   <th id="song-number-column" className="mdl-data-table__cell--non-numeric">Number</th>
 			   <th id="song-title-column">Song</th>
 			   <th id="song-duration-column">Time</th>
 			  </tr>
