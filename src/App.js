@@ -16,8 +16,8 @@ class App extends Component {
         
         <img src={logo} alt="logo" className="logo" />
           <nav className="navigation-links">
-           <Link to='/'>Home</Link>
-           <Link to='/library'>Library</Link> 
+           <Link to='/'>Home </Link>
+           <Link to='/library'> Library</Link> 
           </nav>
         </header>
         <main>
